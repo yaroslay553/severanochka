@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { 'title': 'Северяночка - Каталог' })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <section class="catalog">
+        <div class="container">
+            <div class="crumbs">
+                <a href="index.html" class="crumbs__active">Главная</a>
+                <img src="images/chevron-right.svg" alt="arrow-right">
+                <a href="catalog.html" class="crumbs__default">Каталог</a>
+            </div>
+          <div class="info">
+            <h2 class="section-title">Каталог</h2>
+          </div>
+          <div class="catalog__box">
+            <div class="catalog__big catalog__item">
+              <h3>Молоко, сыр, яйцо</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Хлеб</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Фрукты и овощи</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Замороженные продукты</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Напитки</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Кондитерские изделия</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Чай, кофе</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Бакалея</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Здоровое питание</h3>
+            </div>
+            <div class="catalog__big catalog__item">
+              <h3>Зоотовары</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Детское питание</h3>
+            </div>
+            <div class="catalog__big catalog__item">
+              <h3>Мясо, птица, колбаса</h3>
+            </div>
+            <div class="catalog__little catalog__item">
+              <h3>Непродовольственные товары</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/modal.html', {}')
+    @@include('html/script.html', {})
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Северяночка - Главная</title>
+</head>
+  <body>
+    <div class="wrapper">
+      <header>
+    <div class="container">
+        <div class="header">
+            <div class="header__logo logo">
+                <a href="#" class="logo__link">
+                    <img src="../images/logo.svg" alt="logo" class="logo__img">
+                </a>
+            </div>
+            <button class="header__catalog">
+                <img src="../images/menu.svg" alt="menu">
+                Каталог
+            </button>
+            <input type="text" placeholder="Найти товар" class="header__search">
+            <ul class="dop header__dop">
+                <li class="dop__item">
+                    <a href="" class="dop__link">
+                        <img src="../images/heart.svg" alt="heart">
+                        Избранное
+                    </a>
+                </li>
+                <li class="dop__item">
+                    <a href="" class="dop__link">
+                        <img src="../images/box.svg" alt="box">
+                        Заказы
+                    </a>
+                </li>
+                <li class="dop__item">
+                    <a href="" class="dop__link">
+                        <img src="../images/basket.svg" alt="basket">
+                        Корзина
+                    </a>
+                    
+                </li>
+            </ul>
+            <a class="header__profile">
+                <img src="../images/avatar.png" alt="avatar">
+                Андрей
+                <img src="../images/chevron-down.svg" alt="arrow-down">
+            </a>
+        </div>
+    </div>
+</header>
+    <section class="category">
+        <div class="container">
+            <div class="crumbs">
+                <a href="index.html" class="crumbs__active">Главная</a>
+                <img src="images/chevron-right.svg" alt="arrow-right">
+                <a href="catalog.html" class="crumbs__active">Каталог</a>
+                <img src="images/chevron-right.svg" alt="arrow-right">
+                <a href="category.html" class="crumbs__default">Молоко, сыр, яйцо</a>
+            </div>
+            <div class="info">
+                <h2 class="section-title">Молоко, сыр, яйцо</h2>
+            </div>
+            <div class="category__box">
+                <button class="category__btn" id="our">Товары нашего производства</button>
+                <button class="category__btn" id="healthy-food">Полезное питание</button>
+                <button class="category__btn" id="non-gmo">Без ГМО</button>
+                <div class="category__filter">
+                    <aside class="filter">
+                        <h3 class="filter__title">Фильтр</h3>
+                        <div class="filter__price">
+                            <div>
+                              <span>Цена</span>
+                              <button id="reset">Очистить</button>
+                            </div>
+                            <div>
+                              <input type="number" name="" id="" max="1000" min="1" value="1" class="inputMin">
+                              <img src="images/line.svg" alt="line">
+                              <input type="number" name="" id="" max="1000" min="1" value="100" class="inputMax">
+                            </div>
+                            
+                            <input type="range" name="" id="" class="range" min="1" max="1000">
+                        </div>
+                        <button class="filter__btn" id="milk">Молоко</button>
+                        <button class="filter__btn" id="cream">Сливки</button>
+                        <button class="filter__btn" id="egg">Яйцо</button>
+                        <label class="checkbox">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkbox-title"></span>
+                          <p>В наличии</p>
+                        </label>
+                        <button class="filter__apply">Применить</button>
+                    </aside>
+                    <div class="your-products">
+                      <div class="btn-filter">
+                        <button class="your-products__filter">
+                          Фильтр&nbsp;
+                          <span class="count">4</span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
+                          </svg>
+                        </button>
+                        <button class="your-products__filter">
+                          Цена от&nbsp; 
+                          <span class="prcie-min">99</span>
+                          &nbsp;до&nbsp; 
+                          <span class="price-max">2599</span>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="white"/>
+                          </svg>
+                        </button>
+                        <button class="your-products__filter reset">
+                          Очистить фильтры
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z" fill="#414141"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z" fill="#414141"/>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="box filter-box">
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                        <div class="box__item">
+                          <div class="box__img">
+                            <img src="images/product1.png" alt="product">
+                            <div class="heart">
+                              <img src="images/heart.svg" alt="heart">
+                            </div>
+                            <div class="marker">
+                              -50%
+                            </div>
+                          </div>
+                          <div class="price">
+                            <div class="price__card">
+                              <h3>44,50₽</h3>
+                              <span>С картой</span>
+                            </div>
+                            <div class="price__normal">
+                              <h3>50,50₽</h3>
+                              <span>Обычная</span>
+                            </div>
+                          </div>
+                          <h3 class="box__name">
+                            Г/Ц Блинчики с мясом вес, Россия
+                          </h3>
+                          <div class="rating">
+                            <img src="images/rating.svg" alt="rating">
+                          </div>
+                          <button class="box__btn">
+                            В корзину
+                          </button>
+                        </div>
+                      </div>
+                      <button class="show-more">Показать ещё</button>
+                      <div class="page">
+                        <button class="double-left">
+                          <img src="images/double-left.svg" alt="double-left">
+                        </button>
+                        <button class="left">
+                            <img src="images/left.svg" alt="left">
+                        </button>
+                        <button class="page-list list-active">1</button>
+                        <button class="page-list">2</button>
+                        <button class="page-list">3</button>
+                        <button class="page-list">4</button>
+                        <button class="page-list">5</button>
+                        <button class="page-list">6</button>
+                        <button class="page-list">7</button>
+                        <button class="page-list">8</button>
+                        <button class="right">
+                          <img src="images/right.svg" alt="right">
+                        </button>
+                        <button class="double-right">
+                          <img src="images/double-right.svg" alt="double-right">
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__top">
+          <nav>
+            <a href="index.html">
+              <img src="images/logo-footer.svg" alt="logo-footer">
+            </a>
+            <ul class="footer__menu">
+              <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Статьи</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Политика обработки персональных данных</a></li>
+            </ul>
+          </nav>
+          <div class="footer__info">
+            <div class="social">
+              <a href="#" class="social__link"><img src="images/inst.svg" alt="inst"></a>
+              <a href="#" class="social__link"><img src="images/VK.svg" alt="vk"></a>
+              <a href="#" class="social__link"><img src="images/fb.svg" alt="fb"></a>
+              <a href="#" class="social__link"><img src="images/ok.svg" alt="ok"></a>
+            </div>
+            <a href="tel:88007773333" class="footer__tel">8 800 777 33 33</a>
+          </div>
+
+        </div>
+        <div class="footer__bottom">
+          <span>Дизайн</span>
+          <a href="#">
+            <img src="images/Union.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+     
+    </div>
+  </footer>
+
+    </div>
+    <div class="hide modal">
+    <div class="modal__item">
+      <div class="modal__close">
+        <img src="../images/close (2).svg" alt="close">
+      </div>
+      <h2 class="modal__title">
+        Вход
+      </h2>
+      <form class="modal__form">
+        <label for="">Телефон</label>
+        <input type="tel" placeholder="Введите номер">
+        <button>Вход</button>
+        <div class="modal__reg">
+            <button class="reg">Регистрация</button>
+            <button class="forget">Забыли пароль?</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 
